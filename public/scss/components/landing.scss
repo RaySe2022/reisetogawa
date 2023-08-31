@@ -1,0 +1,31 @@
+.landing {  
+    width:100wh;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 0.2fr 2.6fr; 
+    grid-template-rows: 1fr 0.7fr 1.3fr 1fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . landing_right"
+      ". landing_left . landing_right"
+      ". landing_left . landing_right"
+      ". landing_bottom . landing_right";
+  }
+  
+  .landing_left { grid-area: landing_left; }
+  
+  .landing_bottom { 
+    grid-area: landing_bottom;
+    text-align: center;
+}
+  
+  .landing_right { 
+    display: flex;
+    justify-content: center;
+    grid-area: landing_right;
+}
+  
+.landing_left_textbox {
+    width:100%;
+}

@@ -10,7 +10,12 @@
       "projects_bottom projects_bottom projects_bottom projects_bottom";
   }
   
-  .projects_top { grid-area: projects_top; }
+  .projects_top { 
+  display: flex; 
+  grid-area: projects_top;
+  justify-content: center;
+  align-items: center;
+  }
   
   .projects_left { grid-area: projects_left; }
   

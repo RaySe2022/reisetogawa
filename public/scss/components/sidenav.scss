@@ -1,0 +1,30 @@
+.side-nav { 
+    position: fixed;
+    right:0;
+    top: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    width: 10%;
+    z-index: 1;
+}
+
+.side-nav  span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: black;
+    border: solid 1px black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    transform: rotate(45deg);
+}
+
+.side-nav span.active { 
+    background-color: black; 
+    color:white; 
+    transform: scale(1.5);
+}

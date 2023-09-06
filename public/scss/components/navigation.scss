@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 960px;
+    width: 75vw;
     margin: 0 auto;
 }
 header {
@@ -11,14 +11,20 @@ header {
     padding: 1em 0;
 }
 
+.logo {
+    width: 6.5%;
+}
+
 .logo img {
-    width: 200px; /* Adjust the width as needed */
+    width: 100%; /* Adjust the width as needed */
     height: auto;
 }
 
 .nav-links {
+    width: 20vw;
     list-style: none;
     display: flex;
+    justify-content: space-around;
     gap: 20px;
 }
 
@@ -29,5 +35,5 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #ffc107; /* Change the color on hover */
+    color: #d63621; /* Change the color on hover */
 }

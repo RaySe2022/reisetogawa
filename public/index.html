@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="scss/main.scss">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     
 </head>
@@ -16,19 +19,26 @@
                <img src="logo.png" alt="Your Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
                 <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
-    <section class="landing">
+    <div class="side-nav">
+        <span id = "box1" class="material-symbols-outlined"> </span>
+        <span id = "box2" class="material-symbols-outlined"> </span>
+        <span id = "box3" class="material-symbols-outlined"> </span>
+        <span id = "box4" class="material-symbols-outlined"> </span>
+    </div>    
+
+    <section class="landing" id = "section1">
         <div class="landing_right">
-            <img src="landing_face.png" alt="">
+            <img src="landing.png" alt="">
         </div>
         <div class="landing_left">
             <div class = "landing_left_textbox">
-            <h1>REI SETOGAWA UX DESIGNER</h1>
+            <h1>REI SETOGAWA - UX DESIGNER</h1>
             <p>I am a passionate UX designer who finds joy in crafting remarkable digital experiences through the lens of product design. I immerse myself in the art of empathizing with stakeholders to create solutions that resonate at both a functional and emotional level. </p>
             </div>
         </div>
@@ -37,30 +47,53 @@
             <a href="#projects" class="cta-button">View Projects</a>
         </div>
     </section>
-    <section id="projects">
-        <div class="project">
-            <div class="projects_top">
-                <h2>Projects</h2>
+
+<!-- PROJECT SECTION -->
+<section class ="projects">
+    <div class="projects_top">
+        <h2>Projects</h2>
+    </div>
+    <section class="project_one" id = "project">
+            <div class="project_top">
+            <img src = "sample_img.jpg">
             </div>
-            <div class="projects_left">
-            <h2>Project 1</h2>
+            <div class="project_bottom"> 
+            <h3>Project 1</h3>
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
             <li>
                 <ul>UX Research</ul>
                 <ul>Prototyping</ul>
             </li>
-            <button>See More</button>
             </div>
-            <div class="projects_right">
+    </section>
+<!--PROJECT 2 SECTION-->
+    <section class="project_two" id = "project">
+            <div class="project_top">
+            <h3>Project 2</h3>
+            </div>
+            <div class="project_left">
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+            <div class="project_right">
             <img src = "sample_img.jpg">
             </div>
-            <div class="projects_bottom"></div>
-            <div class="projects_leftmargin"></div>
-            <div class="projects_rightmargin"></div>
-          </div>
-          <div class="project">
+    </section>
+<!--PROJECT 3 SECTION-->
+    <section class="project_three" id = "project">
+        <div class="project_top">
+        <h3>Project 3</h3>
+        </div>
+        <div class="projects_left">
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </div>
+        <div class="projects_right">
+        <img src = "sample_img.jpg">
+        </div>
+    </section>
+<!-- PROJECT 4 SECTION -->
+        <section class="project_four" id = "project">
             <div class="projects_top">
-                <h2>Project 1</h2>
+                <h3>Project 4</h3>
             </div>
             <div class="projects_left">
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -71,12 +104,14 @@
             <div class="projects_bottom"></div>
             <div class="projects_leftmargin"></div>
             <div class="projects_rightmargin"></div>
-          </div>
-        <!-- Add more project sections as needed -->
-
+        </section>
+            <!-- Add more project sections as needed -->
     </section>
     <footer>
         <p>&copy; 2023 Your UX Portfolio. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

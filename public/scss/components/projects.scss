@@ -1,10 +1,10 @@
-.project { 
-    display: grid;
-}
-.project { 
-    width: 100wh;
+.project_top > img { 
+    width: 25vw;
 }
 
-#projects > h2 { 
-    text-align: center;
+#project {
+    display: flex;
+    width: 40vw;
+    height: 25vh;
+    border: solid 1px black;
 }

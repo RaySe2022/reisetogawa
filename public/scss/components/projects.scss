@@ -1,10 +1,15 @@
 .project_top > img { 
-    width: 25vw;
+    width: 100%;
+}
+
+.projects_top { 
+    display: flex;
+    justify-content: center;
 }
 
 #project {
-    display: flex;
-    width: 40vw;
-    height: 25vh;
-    border: solid 1px black;
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    margin: 10%;
 }

@@ -5,7 +5,6 @@
 html {font-size: 100%;} /*16px*/
 
 body {
-  background: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.75;
@@ -52,10 +51,14 @@ h5 {font-size: 1.25rem;}
 small, .text_small {font-size: 0.8rem;}
 
 .projects { 
-  color: whitesmoke;
+  color: #F5EFE7;
 }
 
 .project_left > p {
   margin-bottom: 1rem;
-  color:whitesmoke;
+  color: #F5EFE7;
+}
+
+.project_bottom > p { 
+  color: #F5EFE7;
 }

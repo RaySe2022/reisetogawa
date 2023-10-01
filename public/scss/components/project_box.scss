@@ -1,0 +1,59 @@
+.project_box { 
+    width: 65vw;
+    height: 100vh; 
+} 
+
+.project_box { 
+    text-align: center;
+}
+
+.intro { 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.callout{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: rgb(250, 250, 250);
+    padding: 15px;
+    border-radius: 10px; 
+    text-align: start;
+    width: 100%;
+
+}
+
+.divider{ 
+    width: 100%;
+    height: 2px; 
+    margin-top: 2%;
+    background: rgb(250, 250, 250);
+    margin-bottom: 2%;
+    border-radius: 5%;
+}
+
+.text { 
+    text-align: start;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.details { 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.details_one ul { 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.details_two ul { 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}

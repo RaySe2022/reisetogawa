@@ -1,34 +1,16 @@
 .projects_container { 
   width: 100vw; 
-  height:150vh;
-  min-height: 125vh;
   display: flex;
   justify-content: center;
 }
 .projects {  
   width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "projects_top projects_top"
-    "project_one project_two"
-    "project_three project_four";
+
 }
 #project { 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.projects_top { grid-area: projects_top; }
 
-.project_one { grid-area: project_one; }
-
-.project_two { grid-area: project_two; }
-
-.project_three { grid-area: project_three; }
-
-.project_four { grid-area: project_four; }
 

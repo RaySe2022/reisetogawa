@@ -10,7 +10,14 @@
 .intro { 
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.intro_top {
+    display: flex;
+    flex-direction: column;
     align-items: start;
+    text-align: start;
 }
 
 .callout{
@@ -25,10 +32,11 @@
 }
 
 .divider{ 
-    width: 100%;
+    margin-left: 10%;
+    width: 80%;
     height: 2px; 
     margin-top: 2%;
-    background: rgb(250, 250, 250);
+    background: #292929;
     margin-bottom: 2%;
     border-radius: 5%;
 }

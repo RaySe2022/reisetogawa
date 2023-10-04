@@ -1,24 +1,20 @@
+header {
+    padding: 1em 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 nav {
+    width: 74vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 75vw;
-    margin: 0 auto;
 }
-header {
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
+
 
 .logo {
-    width: 4.5%;
+    width: 7.5vw;
     min-width: 30px;
-}
-
-.logo img {
-    width: 100%; /* Adjust the width as needed */
-    height: auto;
 }
 
 .nav-links {
@@ -26,13 +22,15 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    align-items: end;
+    font-weight: 600;
 }
 
 .nav-links li a {
+    font-size: 1.15rem;
     text-decoration: none;
-    color: black;
     transition: color 0.3s ease;
+    color: #333333;
 }
 
 .nav-links li a:hover {

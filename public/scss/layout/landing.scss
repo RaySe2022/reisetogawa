@@ -1,22 +1,48 @@
 .landing {  
     display: grid;
-    grid-template-columns: 0.7fr 2fr 0.2fr 2.6fr; 
-    grid-template-rows: 1fr 0.7fr 1.3fr 1fr; 
+    grid-template-columns: 0.7fr 2fr 0.2fr 2.4fr; 
+    grid-template-rows: 0.8fr 0.7fr 1.5fr 0.0fr; 
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". . . landing_right"
       ". landing_left . landing_right"
       ". landing_left . landing_right"
-      ". landing_bottom . landing_right";
-  }
+      ". landing_left . landing_right";
+      }
   
-  .landing_left { grid-area: landing_left; }
-  
-  .landing_bottom { 
-    grid-area: landing_bottom;
-}
+  .landing_left { 
+    grid-area: landing_left;
+    margin-top: 30%;
+   }
   
   .landing_right { 
     grid-area: landing_right;
+    margin-top: 11.5%;
 }
+  #landing_1 { 
+    font-weight:600; 
+    color: #6e6f6c;
+    font-size: 4.250rem;
+    line-height: 1;
+  }
+
+  #landing_2 { 
+    font-weight:600; 
+    color: #333333;
+    font-size: 5.250rem;
+    line-height: 1;
+  }
+
+  #landing_3 { 
+    font-weight:600; 
+    color: #333333;
+    font-size: 4.7rem;
+    line-height: 1;
+  }
+
+  #landing_4 { 
+    margin-top: 3.5%;
+    width:90%;
+  }
+
+

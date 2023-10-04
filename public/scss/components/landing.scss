@@ -12,9 +12,29 @@
   .landing_right { 
     display: flex;
     justify-content: center;
-}
-  
-.landing_left_textbox {
-    width:100%;
-}
+    width: 90%;
+    height: 90%;
+  }
+
+  .landing_right img { 
+    min-width: 350px;
+    min-height: 600px;
+  }
+
+  .landing_left { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing_left button {
+    text-decoration: underline;
+    color: #fff;
+    background-color: #292929;
+    border: none;
+    border-radius: 15px;
+    width: 17.5%;
+    height: 5%;
+    align-self: center;
+    margin-top: 40px;
+  }
 

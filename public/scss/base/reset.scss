@@ -29,6 +29,10 @@ dd {
   margin: 0;
 }
 
+html { 
+  max-zoom: 1.2; /* Limit the maximum zoom level */
+  min-zoom: 1.0; /* Prevent zooming out */
+}
 /* Set core body defaults */
 body {
   min-height: 100vh;

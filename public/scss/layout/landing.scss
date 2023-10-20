@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
 .landing {  
     display: grid;
     grid-template-columns: 0.7fr 2fr 0.2fr 2.4fr; 
@@ -44,5 +50,6 @@
     margin-top: 3.5%;
     width:90%;
   }
+
 
 

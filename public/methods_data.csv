@@ -1,0 +1,48 @@
+ids,parents,labels
+Methods,root,Methods
+Discover,Methods,Discover
+Define,Methods,Define
+Develop ,Methods,Develop 
+Deliver,Methods,Deliver
+Background Research,Discover,Background Research
+Literature Review,Background Research,Literature Review
+Data Analysis,Background Research,Data Analysis
+Case Studies,Background Research,Case Studies
+Market Analysis,Background Research,Market Analysis
+Competitor Analysis ,Background Research,Competitor Analysis 
+UX Research,Discover,UX Research
+Contextual Observation,UX Research,Contextual Observation
+A/B Testing,UX Research,A/B Testing
+Heuristic Evaluation,UX Research,Heuristic Evaluation
+Card Sorting,UX Research,Card Sorting
+Usability Testing,UX Research,Usability Testing
+Focus Groups,UX Research,Focus Groups
+Online Ethnography,UX Research,Online Ethnography
+Interviews,UX Research,Interviews
+Mind Mapping,Define,Mind Mapping
+Decision Matrix,Define,Decision Matrix
+Data Visualisation,Define,Data Visualisation
+5 Whys,Define,5 Whys
+Statistical Analysis,Define,Statistical Analysis
+Thematic Analysis,Define,Thematic Analysis
+Affinity Diagramming,Define,Affinity Diagramming
+Wire Framing,Develop,Wire Framing
+Mock-ups,Develop,Mock-ups
+3D Rendering/Printing,Develop,3D Rendering/Printing
+Mood Boards,Develop,Mood Boards
+User Journey Mapping,Develop,User Journey Mapping
+Story Boarding,Develop,Story Boarding
+User Personas,Develop,User Personas
+Prototyping,Develop,Prototyping
+Low-Fidelity Prototyping,Prototyping,Low-Fidelity Prototyping
+High Fidelity Prototyping,Prototyping,High Fidelity Prototyping
+Video Prototyping,Prototyping,Video Prototyping
+Paper Protoyping,Low-Fidelity Prototyping,Paper Protoyping
+Sketching,Low-Fidelity Prototyping,Sketching
+Experience Prototyping,Deliver,Experience Prototyping
+Pesona-based Walkthroughs,Deliver,Pesona-based Walkthroughs
+Body Storming,Deliver,Body Storming
+Wizard of Oz Testing,Deliver,Wizard of Oz Testing
+Prototype Walkthroughs,Deliver,Prototype Walkthroughs
+Comparative Testing,Deliver,Comparative Testing
+Usability Testing,Deliver,Usability Testing

@@ -1,30 +1,47 @@
-import Plotly from 'plotly.js-dist-min'
+import * as d3 from "d3";
+var Plotly = require('plotly.js-dist-min');
 
-$(document).ready(function() {
-    $(window).on('scroll', function() {
-        // Reset the styles on all icons in the side-nav
-        $('.side-nav span').css({
-            'background-color': 'transparent',
-            'color': 'black',
-            'transform': 'rotate(45deg)'
-        }).removeClass('active');
+d3.csv("/methods_data.csv", function(err, rows) {
+  if (err) {
+    console.error('Error reading CSV file:', err);
+    return;
+  }
 
-        // Check which section is in view and style the corresponding icon in the side-nav
-        $('#section2,#section3,#section4, .landing').each(function(index) {
-            var top = $(this).offset().top;
-            var bottom = top + $(this).outerHeight();
+  console.log('CSV data:', rows); // Debugging statement
 
-            if ($(window).scrollTop() >= top && $(window).scrollTop() <= bottom) {
-                var correspondingIcon = $('.side-nav span').eq(index);
-                correspondingIcon.css({
-                    'background-color': 'black',
-                    'color': 'white',
-                    'transform': 'rotate(45deg) scale(1.2)'
-                }).addClass('active');
-                return false; // Exit the loop
-            }
+  try {
+    // Check if rows is an array before using map
+    if (Array.isArray(rows)) {
+      function unpack(rows, key) {
+        return rows.map(function (row) {
+          return row[key];
         });
-    });
+      }
+
+      var data = [
+        {
+          type: "sunburst",
+          maxdepth: 3,
+          ids: unpack(rows, 'ids'),
+          labels: unpack(rows, 'labels'),
+          parents: unpack(rows, 'parents')
+        }
+      ];
+
+      var layout = {
+        margin: { l: 0, r: 0, b: 0, t: 0 },
+        sunburstcolorway: [
+          "#636efa", "#EF553B", "#00cc96", "#ab63fa", "#19d3f3",
+          "#e763fa", "#FECB52", "#FFA15A", "#FF6692", "#B6E880"
+        ],
+        extendsunburstcolorway: true
+      };
+
+      Plotly.newPlot('methods_chart', data, layout, { showSendToCloud: true });
+    } else {
+      console.error('CSV data is not an array.');
+    }
+  } catch (error) {
+    console.error('An error occurred:', error);
+  }
 });
-
-

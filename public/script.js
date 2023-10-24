@@ -1,3 +1,5 @@
+import Plotly from 'plotly.js-dist-min'
+
 $(document).ready(function() {
     $(window).on('scroll', function() {
         // Reset the styles on all icons in the side-nav
@@ -24,3 +26,5 @@ $(document).ready(function() {
         });
     });
 });
+
+

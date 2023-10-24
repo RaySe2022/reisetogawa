@@ -1,0 +1,42 @@
+.aboutme_landing {
+    width: 75vw;
+    height: 90vh;
+    margin-left: 12.5vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.aboutme_image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.aboutme_image > img { 
+    margin-top: 4.5%;
+    width: 60%;
+}
+
+.aboutme_description { 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.aboutme_description > p { 
+    width: 95%;
+    margin-bottom: 3.5%;
+}
+
+.aboutme_skills { 
+    width: 100vw;
+    height: 95vh;
+    background-color: #EDE1D1;
+
+}

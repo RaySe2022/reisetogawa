@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="scss/main.scss">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     
 </head>
@@ -17,7 +16,7 @@
         <nav>
             <a href="index.html">
             <div class="logo"> 
-                <img src="logo.png" alt="Your Logo">
+                <img src="./assets/Home/logo.png" alt="logo">
              </div>
             </a>
             <ul class="nav-links">
@@ -36,7 +35,7 @@
 
     <section class="landing" id = "section1">
         <div class="landing_right">
-            <img src="landing_img.png" alt="">
+            <img src="assets/Home/landing_img.png" alt="landing image">
         </div>
         <div class="landing_left">
             <div class = "landing_left_textbox">
@@ -45,7 +44,7 @@
             <p id= 'landing_3'> UX DESIGNER</p>
             <p id = 'landing_4'>I am a passionate UX designer who finds joy in crafting remarkable digital experiences through the lens of product design. I immerse myself in the art of empathizing with stakeholders to create solutions that resonate at both a functional and emotional level. </p>
             </div>
-            <button><a href="#projects_link">see projects</a>  </button>
+            <button id = "see_btn"><a href="#projects_link">see projects</a>  </button>
         </div>
 
     </section>
@@ -55,9 +54,11 @@
 <!-- PROJECT SECTION -->
 <section class ="projects_section" id = "projects_link">
         <h1 class = "projects_header">PROJECTS</h1>
+
+        <!---START OF PROJECT ONE -->
         <section class="project" id = "project_one">
             <div class = "img_frame">
-                <img src = "sample_img.jpg">
+                <img src = "assets/Home/sample_img.jpg">
             </div>
             <div class="project_info"> 
                 <p class = "project_date">xxxx-xxxx</p>
@@ -66,16 +67,48 @@
                 <p> Australia is advancing towards SDG7 (Affordable and Clean Energy) at the governmental level, yet individual energy consumption habits remain stagnant. There's a pressing need for increased awareness, control, and motivation among people to reduce energy use. My objective was to devise a solution to address this gap.</p>
                 <div class = "tags"> 
                     <p id = "UI"> 
-                        User Interface
+                        USER INTERFACE
                     </p>
                     <p id = "UX"> 
-                        User Experience
+                        USER EXPERIENCE
                     </p> 
                     <p id = "UR"> 
-                        User Research
+                        USER RESEARCH
                     </p>
-                </div>
+                </div> 
+                <span id = "arrow" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
             </div>
+           
+        </section>
+
+        <!--END OF PROJECT ONE-->
+        <section class="project" id = "project_two">
+            <div class = "img_frame">
+                <img src = "assets/Home/sample_img.jpg">
+            </div>
+            <div class="project_info"> 
+                <p class = "project_date">xxxx-xxxx</p>
+                <h1>Hology</h1>
+                <h3>visualise your energy</h3>
+                <p> Australia is advancing towards SDG7 (Affordable and Clean Energy) at the governmental level, yet individual energy consumption habits remain stagnant. There's a pressing need for increased awareness, control, and motivation among people to reduce energy use. My objective was to devise a solution to address this gap.</p>
+                <div class = "tags"> 
+                    <p id = "UI"> 
+                        USER INTERFACE
+                    </p>
+                    <p id = "UX"> 
+                        USER EXPERIENCE
+                    </p> 
+                    <p id = "UR"> 
+                        USER RESEARCH
+                    </p>
+                </div> 
+              <span id = "arrow" class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>    
+            </div>
+      
         </section>
     
    
@@ -87,7 +120,6 @@
         <p>&copy; 2023 Your UX Portfolio. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 
 </body>
 </html>

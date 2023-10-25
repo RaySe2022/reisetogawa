@@ -1,6 +1,10 @@
+body { 
+    max-width: 100%;
+}
 .aboutme_landing {
     width: 75vw;
     height: 90vh;
+    max-height: 100%;
     margin-left: 12.5vw;
     margin-top: 10vh;
     display: flex;
@@ -22,35 +26,67 @@
 }
 
 .aboutme_description { 
-    width: 50%;
+    width: 45%;
+    max-height: 85%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
 
 
 .aboutme_description > p { 
-    width: 95%;
+    font-size: 0.95rem;
+    line-break: normal;
+    width: 100%;
     margin-bottom: 3.5%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .aboutme_skills { 
     width: 100vw;
-    height: 120vh;
+    height: 90vh;
     background-color: #EDE1D1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
 }
 
 
-.aboutme_skills > h1 { 
-    margin-top: 2%;
-    margin-bottom: 4%;
-    margin-left: 12.5%;
+#Methods_and_Skills { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90%;
+    width: 42.5%;
+    gap: 2.25%
+}
+
+#methods:hover, #skills:hover {
+    color: #292929; /* This will change the text color to a dark gray when hovered */
+    cursor: pointer; /* This will change the cursor to a hand pointer, indicating the element is interactive */
+    transition: 0.3s; /* This will add a smooth transition effect */
+}
+
+#methods { 
+    color: #292929;
+}
+
+#skills { 
+    color: #f5efe7;
 }
 
 #methods_chart { 
-    width: 60%;
-    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    width: 40%;
+    height:100%;
+    overflow: hidden;
 }
 

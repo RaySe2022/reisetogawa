@@ -156,22 +156,39 @@ document.addEventListener("DOMContentLoaded", function () {
       "Deliver"
   
     ],
+    "leaf": {"opacity": 0.4},
+
   
-    outsidetextfont: {size: 20, color: "#377eb8"},
+    outsidetextfont: {size: 20, color: "#292929"},
   
     // leaf: {opacity: 0.4},
   
-    marker: {line: {width: 2}},
-  
+    marker: {
+      colors: ["#F5EFE7","#F5EFE7","#F5EFE7","#F5EFE7","#F5EFE7","#F5EFE7","#F5EFE7","#F5EFE7",],
+      line: {
+        color: "#292929"
+      }
+    },
+
+    textfont: { 
+      color: "#292929",
+      family: "Balto",
+      size: "15px"
+    },
+
+    insidetextorientation: "auto"
   }];
   
   
   var layout = {
   
     margin: {l: 0, r: 0, b: 0, t:0},
+    
   
-    sunburstcolorway:["#636efa","#ef553b","#00cc96"],
-  
+
+    plot_bgcolor: 'rgba(0,0,0,0)', // Transparent plot background
+    paper_bgcolor: 'rgba(0,0,0,0)', // Transparent paper background
+    
   };
   
   

@@ -66,18 +66,18 @@ body {
     gap: 2.25%
 }
 
-#methods:hover, #skills:hover {
-    color: #292929; /* This will change the text color to a dark gray when hovered */
-    cursor: pointer; /* This will change the cursor to a hand pointer, indicating the element is interactive */
-    transition: 0.3s; /* This will add a smooth transition effect */
-}
 
 #methods { 
     color: #292929;
 }
 
-#skills { 
-    color: #f5efe7;
+#and { 
+    color: #F5EFE7;
+
+}
+
+#tools { 
+    color: #F5EFE7;
 }
 
 #methods_chart { 
@@ -88,5 +88,16 @@ body {
     width: 40%;
     height:100%;
     overflow: hidden;
+}
+
+#tools_chart { 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    width: 30%;
+    height:100%;
+    overflow: hidden;
+
 }
 

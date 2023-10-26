@@ -15,6 +15,8 @@ nav {
 .logo {
     width: 7.5vw;
     min-width: 30px;
+    transition: all 0.5s ease; /* This will apply the transition to all properties. Adjust the duration (0.3s) as needed */
+
 }
 
 .nav-links {
@@ -27,12 +29,20 @@ nav {
 }
 
 .nav-links li a {
+    display: inline-block;
     font-size: 1.15rem;
     text-decoration: none;
-    transition: color 0.3s ease;
-    color: #333333;
+    color: #292929;
+    transition: all 0.5s ease; /* This will apply the transition to all properties. Adjust the duration (0.3s) as needed */
+
 }
 
 .nav-links li a:hover {
-    color: #d63621; /* Change the color on hover */
+    color: #404040; /* This will enlarge the logo by 10% when hovered */
+    transform: scale(1.2);
+}
+
+
+.logo :hover {
+    transform: scale(1.2); /* This will enlarge the logo by 10% when hovered */
 }

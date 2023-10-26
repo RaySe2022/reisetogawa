@@ -33,15 +33,13 @@ body {
     align-items: start;
     text-overflow: ellipsis;
     overflow: hidden;
-
 }
 
 
 .aboutme_description > p { 
     font-size: 0.95rem;
     line-break: normal;
-    width: 100%;
-    margin-bottom: 3.5%;
+    width:90%;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -95,7 +93,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 50%;
-    width: 30%;
+    width: 40%;
     height:100%;
     overflow: hidden;
 

@@ -16,7 +16,7 @@ const texts = [
     "I am a passionate UX designer who finds joy in crafting remarkable digital experiences through the lens of product design. I immerse myself in the art of empathizing with people to create solutions that resonate at both a functional and emotional level."
 ];
 const normalSpeed = 100;
-const fastSpeed = 20; // Faster typing speed for the last <p> element
+const fastSpeed = 30; // Faster typing speed for the last <p> element
 const pElements = document.querySelectorAll(".landing_left_textbox p");
 
 function typeWriter() {
@@ -30,5 +30,12 @@ function typeWriter() {
         textIndex++;
         i = 0;
         setTimeout(typeWriter, 500);
+    } else {
+        showButton();
     }
+}
+
+function showButton(){
+    const landing_btn = document.getElementById("see_btn_landing");
+    landing_btn.style.display="block";
 }

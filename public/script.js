@@ -39,8 +39,3 @@ function showButton(){
     const landing_btn = document.getElementById("see_btn_landing");
     landing_btn.style.display="block";
 }
-
-
-//document.getElementById('project_one').addEventListener('click',function(){
-  //  window.location.href = 'project_hology.html'
-//})

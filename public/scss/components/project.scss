@@ -27,7 +27,7 @@ body {
     min-height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.8fr 2fr 0.3fr;
+    grid-template-rows: 0.4fr 0.8fr 0fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -55,6 +55,7 @@ body {
   
   
 .introduction_right { 
+    margin-top: 7%;
     justify-self: end;
     grid-area: introduction_right;
     display: flex;
@@ -214,7 +215,86 @@ body {
   .process_middle { 
     grid-area: process_middle;
    }
-  
+
+   .project_iteration {
+    min-height: 60vh;
+    max-width: 50vw;
+   }
+
+   .project_iteration > .iteration { 
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+   }
+
+   .iteration_discover > .callout {
+    padding: 3%;
+   }
+
+   .iteration_discover > h4 { 
+    margin-top: 2%;
+    margin-bottom: 2%;
+   }
+
+   .methods_gallery { 
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap:1.5%;
+    align-items: stretch;
+   }
+
+
+   .method > h5 {
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    line-height: 1;
+    font-weight: 400;
+   }
+
+   .method > p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1;
+    line-break:loose;
+    margin-bottom: 3%;
+    color: #797777;
+   }
+
+   .method > img { 
+    border-radius: 0.5vw;
+    max-height: 60%;
+    width: 100%;
+   }
+
+   .method { 
+    flex: 1;    
+    flex-basis: 25%;
+    height: 30%;
+   }
+
+   #see_method { 
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+   }
+
+   #see_method > p {
+    color: #F17256;
+   }
+
+   .material-symbols-outlined { 
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: #F17256;
+   }
+   .methods_gallery > :nth-child(4) {
+    flex-grow: 1;
+}
+
 
 
 //COMPONENTS

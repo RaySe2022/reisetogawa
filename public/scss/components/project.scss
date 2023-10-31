@@ -1,4 +1,126 @@
-.project_body > section {
+.top_img_box { 
+    max-height: 40vh;
+    overflow: hidden;
+}
+
+.project_top_img { 
+    max-height: auto;
+    min-width: 100%;
+}
+
+.project_sections { 
+    display: flex;
+    flex-direction: column;
+}
+
+.project_section { 
+    margin-left: 25vw;
     min-height: 100vh;
-    border: 1 solid 'black';
+    max-width: 50%;
+    //border: 1px solid red ;
+}
+
+#introduction {  
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      "introduction_left introduction_right"
+      ". .";
+  }
+  
+  .introduction_left { 
+    grid-area: introduction_left;
+    max-width: 80%;
+}
+
+.introduction_left > h5{ 
+    margin: 1.5% 0;
+    font-weight: 400;
+    color: #404040;
+    line-height: 1;
+    line-break:normal;
+}
+
+.introduction_left > button { 
+    margin-top: 7.5%;
+}
+  
+  
+.introduction_right { 
+    justify-self: end;
+    grid-area: introduction_right;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}   
+
+.introduction_right > p { 
+    margin: 2% 0;
+}
+
+#overview {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "overview_top overview_top overview_top"
+      "overview_roles overview_tools overview_duration"
+      ". . .";
+  }
+  
+.overview_top { 
+    margin-top: 5%;
+    grid-area: overview_top;
+ }
+
+.overview_top > h3 { 
+    text-align: center;
+    margin-bottom: 3%;
+ }
+
+.overview_roles { 
+    grid-area: overview_roles;
+ }
+
+.overview_tools { 
+    grid-area: overview_tools;
+ }
+
+.overview_duration { 
+    grid-area: overview_duration;
+ }
+
+
+  
+
+
+
+//COMPONENTS
+
+#sec_div { 
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: #797777;
+    border-radius: 1%;
+    margin-left: 25%;    
+}
+
+.overview_top > #sec_div {
+    width: 100%;
+    margin-left: 0;
+}
+
+.callout { 
+    width: 100%;
+    padding: 2.5%;
+    background-color: #ffffff;
+    text-align: center;
 }

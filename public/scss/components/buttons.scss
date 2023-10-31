@@ -52,3 +52,28 @@
   transform: scale(1.2);
 }
 
+#introduction_see_btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F17256;
+  border: none;
+  border-radius: 0.5vh;
+  width: 40%;
+  height: 7.5%;
+  margin-top: 40px;
+  padding-bottom: 1%;
+  transition: all 0.5s ease; 
+  margin-left: 1%;
+}
+
+#introduction_see_btn a{ 
+  display: inline-block;
+  color: #fff;
+  transition: all 0.5s ease; /* This will apply the transition to all properties. Adjust the duration (0.3s) as needed */
+}
+
+
+#introduction_see_btn a:hover { 
+  transform: scale(1.2);
+}
+

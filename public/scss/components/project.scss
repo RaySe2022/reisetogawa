@@ -137,7 +137,7 @@ body {
     min-height: 50vh;
  }
 
- #solution > h3 {
+ #solution > h2 {
     margin-bottom: 2%;
  }
 
@@ -171,7 +171,7 @@ body {
     align-items: center;
   }
 
-  .process_top > h3 { 
+  .process_top > h2 { 
     margin-top: 3%;
     margin-bottom: 1%;
   }
@@ -194,6 +194,7 @@ body {
     align-items: start;
     text-align: left;
     width: 40%;
+    max-height: 30%;
   }
   
   .process_right {
@@ -210,7 +211,12 @@ body {
     align-items: end;
     text-align: right;
     width: 40%;
+    max-height: 30%;
   }
+
+    .process > * > p {
+    line-height: 1;
+    }
   
   .process_middle { 
     grid-area: process_middle;
@@ -233,7 +239,7 @@ body {
 
    .iteration_discover > h4 { 
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 0.5%;
    }
 
    .methods_gallery { 
@@ -293,11 +299,43 @@ body {
    }
    .methods_gallery > :nth-child(4) {
     flex-grow: 1;
-}
+    }
+
+    .iteration_develop > .callout { 
+    padding: 2% 2%;
+    }
 
 
 
 //COMPONENTS
+
+.iteration_define {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    overflow-y: hidden;
+ }
+
+.insights_kanban { 
+    display: flex;
+    max-width: 100%;
+    min-height: 50vh; 
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 10px 1%;
+}
+
+.insights_kanban > div {
+    width: 40%;
+    flex: 1 1 auto;
+    background-color: #ffffff;
+    padding: 2.5% 2.5%;
+    text-align: center;
+    border-radius: 0.5vw;
+}
+
+.insights_kanban > div > ul{
+   list-style: none;
+}
 
 #sec_div { 
     display: inline-block;
@@ -307,6 +345,7 @@ body {
     border-radius: 1%;
     margin-bottom: 2.5%;
     margin-top: 2.5%;
+    line-height: 1;
 
 
 }
@@ -338,9 +377,13 @@ body {
 
 .callout { 
     width: 100%;
-    padding: 5% 5%;
+    padding: 2.5% 2.5%;
     background-color: #ffffff;
     text-align: center;
+}
+
+.iteration_define > .callout { 
+    padding: 2.5% 2.5%;
 }
 
 .three_divs { 
@@ -366,3 +409,29 @@ body {
     margin-left: 10%;
     margin-right: 0;
 }
+
+h4 { 
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.img_box { 
+    position: relative;
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+.img_box_caption { 
+    position: absolute;
+    min-width: 100%;
+    bottom: 0;
+    background-color: #404040;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.iteration_header { 
+    text-align: center;
+}
+

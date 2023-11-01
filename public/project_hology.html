@@ -94,7 +94,9 @@
 
         <div class = "project_section" id = "solution">
             <h3> FINAL SOLUTION </h3>
+            <div class = "callout">
             <p>We designed ‘Hology’ - a home energy meter that visually informs the household`s live energy usage and empowers and motivates people to act economically and environmentally sustainable. </p>
+            </div>
             <div class = "solution_vid">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/i0-SJQJ4DVs?si=mR9ytJmEpErvpht7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -278,10 +280,10 @@
                 </div>
                 <h4>Methods</h4>
 
-             <div class="slideshow-container slideshow-1">
+             <div class="slideshow-1">
                 <div class="slide fade">
                     <img src="assets/Hology/user_personas.png" alt="Image of user personas">
-                    <div class="caption">user personas created based on background research</div>
+                    <div class="caption">User personas created based on background research</div>
                 </div>
                 <div class="slide fade">
                     <img src="assets/Hology/concept_orb.png" alt="Image of Orb`s concept sketching">
@@ -301,14 +303,15 @@
                 </div>
             
                 
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide('slideshow-1', -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide('slideshow-1', 1)">&#10095;</a>
+
                 <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide('slideshow-1',1)"></span>
+                    <span class="dot" onclick="currentSlide('slideshow-1',2)"></span>
+                    <span class="dot" onclick="currentSlide('slideshow-1',3)"></span>
+                    <span class="dot" onclick="currentSlide('slideshow-1',4)"></span>
+                    <span class="dot" onclick="currentSlide('slideshow-1',5)"></span>
                 </div>
             </div> <!--END OF DEVELOP-->
 
@@ -320,7 +323,7 @@
                 <h4> Scenario Walkthroughs</h4>
                 <div class = "img_box"> 
                     <img src="assets/Hology/i1_scenario_walkthrough.png">
-                <div class = "img_box_caption"> participants during the scenario walkthroughs</div>
+                <div class = "img_box_caption"> Participants during the scenario walkthroughs</div>
             </div> <!--END OF DELIVER-->
         </div>
         </div>
@@ -393,79 +396,149 @@
                     <p> 
                         The focus group results and interviews were analyzed using thematic analysis. And questionnaire results were analyzed by statistical analysis.                     </p>
                 </div>
-
-                <div class="slideshow-container slideshow-2">
+                <h4> Methods </h4>
+                <div class="slideshow-2">
                     <div class="slide fade">
                         <img src="assets/Hology/i2_thematic_analysis.png" alt="Image of thematic analysis">
-                        <div class="caption"> thematic analysis of findings from previous user testing</div>
+                        <div class="caption"> Thematic analysis of findings from previous user testing</div>
                     </div>
                     <div class="slide fade">
                         <img src="assets/Hology/i2_statistical_analysis.png" alt="Image of statistical analysis">
-                        <div class="caption">statistical analysis of questionnaire results</div>
+                        <div class="caption">Statistical analysis of questionnaire results</div>
                     </div>
                    
                     
                     
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    <a class="prev" onclick="changeSlide('slideshow-2', -1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide('slideshow-2', 1)">&#10095;</a>
+
                     <div class="dots">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide('slideshow-2', 1)"></span>
+                        <span class="dot" onclick="currentSlide('slideshow-2', 2)"></span>
                     </div>
                 </div>
 
                 <h4>Key Insights</h4>
                 <div class = "insights_kanban"> 
                     <div> 
-                        <p>Australia has effective sustainability and reliability strategy, but affordability improvements at the personal level are regressing. Primary stakeholders: Australian households.</p>
+                        <p>
+                            The Orb was considered the more effective solution to reduce energy costs at home due to the motivation and information the product provides from its visual components.                         
+                        </p>
                     </div>
                     <div> 
-                        <p>The importance of offering convenience, power, and consumption control information to residential energy users.</p>
+                        <p>
+                            The Orb provided information more effectively. 
+                        </p>
                     </div>
                     <div> 
-                        <p>Limited viable solutions for immediate, feasible energy cost reduction beyond unplugging appliances.</p>
+                        <p>
+                            The importance of aesthetics in informing and motivating users.
+                        </p>
                     </div>
-                    <div> 
-                        <p> Survey results identify barriers like insufficient motivation and information, despite participants expressing a desire to cut energy expenses. </p>
-                    </div>
-                    <div> 
-                        <p>Interviews uncover core reasons behind energy cost reduction challenges: </p>
-                        <ul>
-                            <li> 1. Users struggle to comprehend real-time energy data during consumption. </li>
-                            <li> 2. Scarcity of convenient methods to manage energy usage effectively. </li>
-                            <li> 3. Reduced motivation due to technical and financial limitations.</li>
-                        </ul>   
-                    </div>        
-                </div>   
-            </div> <!-- END OF DEFINE -->
+                </div>  
 
+            </div> <!-- END OF DEFINE -->
 
 
             <div class = "iteration_develop"> 
                 <h2>Develop</h2>
                 <div class="callout">
-                    <p> We made the stakeholder personas and conducted forced association to ideate initial concepts and illustrated concept sketching and storyboarding to test them.  </p>
+                    <p> 
+                        From the findings from our analysis, we decided to first explore the most effective visualization to inform and motivate users about energy costs.                </p>
+                    </p>
                 </div>
-                <h4>Methods</h4>
+                <h4> Paper Prototype </h4>
+                <div class = "img_box">
+                    <img src = "assets/Hology/i2_paperprototype.png">
+                    <div class="img_box_caption">
+                    <p>We developed paper prototypes of a variety of visualizations which were knwon for alarming or informing users</p>
+                    </div>
+                </div>
             </div>
-
              <!--END OF DEVELOP-->
 
             <div class = "iteration_deliver">  <!-- START OF DELIVER-->
             <h2> Deliver </h2> 
             <div class = "callout"> 
-                <p>We conducted scenario walkthroughs with five participants to gain quick reviews of the concepts</p>
-            </div>
+                <p>
+                    We conducted scenario walkthrough & A/B testing with five participants to gain quick reviews of the concepts.            </div>
             <h4> Scenario Walkthroughs</h4>
             <div class = "img_box"> 
-                <img src="assets/Hology/i1_scenario_walkthrough.png">
-                <div class = "img_box_caption"> participants during the scenario walkthroughs</div>
+                <img src="assets/Hology/i2_testing.jpg">
+                <div class = "img_box_caption"> participant during the scenario walkthroughs</div>
             </div> <!--END OF DELIVER-->
         </div> <!--END OF SECOND ITERATION-->
 
 
 
     </section> <!--END OF PROJECT SECTION-->
+
+
+
+    <!--- OTHER COMPONENTS-->
+    <div id = "back_to_top">
+        <span id = "back_to_top_btn" class="material-symbols-outlined">
+            <a href="#introduction">
+            keyboard_double_arrow_up
+            </a>
+        </span>
+    </div>
+
+
+        <div class = "nav_left"> 
+            <div class = "iteration">
+                <h5>Overview</h5>
+                <p> Roles </p>
+                <p> Tools</p>
+                <p> Duration </p>
+                <p> Team </p>
+            </div>
+            <div class = "iteration">
+                <h5>Problem Statement & Solution</h5>
+            </div>
+            <div class = "iteration">
+                <h5>iteration 1&2</h5>
+                <p> Discover </p>
+                <p> Define </p>
+                <p> Develop </p>
+                <p> Deliver </p>
+            </div>
+            <div class = "iteration">
+                <h5>iteration 3&4 </h5>
+                <p> Discover</p>
+                <p> Define </p>
+                <p> Develop </p>
+                <p> Deliver </p>
+            </div>
+            <div class = "iteration">
+                <h5>iteration 5 </h5>
+                <p> Discover </p>
+                <p> Define </p>
+                <p> Develop </p>
+                <p> Deliver </p>
+            </div>
+            <div class = "iteration">
+                <h5>iteration 6 </h5>
+                <p> Discover </p>
+                <p> Define </p>
+                <p> Develop </p>
+                <p> Deliver </p>
+            </div>
+            <div class = "iteration">
+                <h5>iteration 7 </h5>
+                <p> Discover </p>
+                <p> Define </p>
+                <p> Develop </p>
+                <p> Deliver </p>
+            </div>
+            <div class = "iteration">
+                <h5>iteration 8 </h5>
+                <p> Discover </p>
+                <p> Define </p>
+                <p> Develop </p>
+                <p> Deliver </p>
+            </div>
+
 
  
     <script src ="slideshow.js"></script>

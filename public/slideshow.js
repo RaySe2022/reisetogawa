@@ -1,49 +1,43 @@
-console.log("slideshow is running");
-
-// Function to change slides in a specific slideshow
-function changeSlide(slideshowClass, n) {
-    showSlide(slideshowClass, (slideIndex[slideshowClass] += n));
-}
-
-// Function to show a specific slide in a slideshow
-function currentSlide(slideshowClass, n) {
-    showSlide(slideshowClass, (slideIndex[slideshowClass] = n));
-}
-
-// Function to show slides in a specific slideshow
-function showSlide(slideshowClass, n) {
-    const slideshow = document.querySelector(`.${slideshowClass}`);
-    const slides = slideshow.querySelectorAll('.slide');
-    const dots = slideshow.querySelectorAll('.dot');
-
-    if (n > slides.length) {
-        slideIndex[slideshowClass] = 1;
-    }
-
-    if (n < 1) {
-        slideIndex[slideshowClass] = slides.length;
-    }
-
-    slides.forEach((slide) => {
-        slide.style.display = 'none';
-    });
-
-    dots.forEach((dot) => {
-        dot.classList.remove('active');
-    });
-
-    slides[slideIndex[slideshowClass] - 1].style.display = 'block';
-    dots[slideIndex[slideshowClass] - 1].classList.add('active');
-}
-
-// Initialize slideIndex for each slideshow
-const slideIndex = {
+// Object to hold the slide indices for each slideshow
+let slideIndices = {
     'slideshow-1': 1,
     'slideshow-2': 1
-};
-
-// Initialize the first slideshow
-showSlide('slideshow-1', slideIndex['slideshow-1']);
-
-// Initialize the second slideshow
-showSlide('slideshow-2', slideIndex['slideshow-2']);
+  };
+  
+  function changeSlide(slideshowId, n) {
+    showSlides(slideshowId, slideIndices[slideshowId] += n);
+  }
+  
+  function currentSlide(slideshowId, n) {
+    showSlides(slideshowId, slideIndices[slideshowId] = n);
+  }
+  
+  function showSlides(slideshowId, n) {
+    let slideshow = document.querySelector(`.${slideshowId}`);
+    let slides = slideshow.getElementsByClassName("slide");
+    let dots = slideshow.getElementsByClassName("dot");
+  
+    if (n > slides.length) {
+      slideIndices[slideshowId] = 1;
+    } else if (n < 1) {
+      slideIndices[slideshowId] = slides.length;
+    }
+  
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+  
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  
+    slides[slideIndices[slideshowId] - 1].style.display = "block";
+    if(dots[slideIndices[slideshowId] - 1]){ // Check if the dot exists
+      dots[slideIndices[slideshowId] - 1].className += " active";
+    }
+  }
+  
+  // Initialize the slideshows
+  showSlides('slideshow-1', slideIndices['slideshow-1']);
+  showSlides('slideshow-2', slideIndices['slideshow-2']);
+  

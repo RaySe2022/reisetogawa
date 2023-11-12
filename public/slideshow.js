@@ -1,7 +1,13 @@
 // Object to hold the slide indices for each slideshow
 let slideIndices = {
     'slideshow-1': 1,
-    'slideshow-2': 1
+    'slideshow-2': 1,
+    'slideshow-3': 1,
+    'slideshow-4': 1,
+    'slideshow-6': 1,
+    'slideshow-7': 1
+
+
   };
   
   function changeSlide(slideshowId, n) {
@@ -40,4 +46,12 @@ let slideIndices = {
   // Initialize the slideshows
   showSlides('slideshow-1', slideIndices['slideshow-1']);
   showSlides('slideshow-2', slideIndices['slideshow-2']);
+  showSlides('slideshow-3', slideIndices['slideshow-3']);
+  showSlides('slideshow-4', slideIndices['slideshow-4']);
+  showSlides('slideshow-6', slideIndices['slideshow-6']);
+  showSlides('slideshow-7', slideIndices['slideshow-7']);
+
+
+
+
   

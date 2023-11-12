@@ -11,15 +11,32 @@
     margin-bottom: 3%;
 }
 
-.projects_section > a { 
-    text-decoration: none;
+
+#hology_link > #arrow{ 
+    color: #333333;
+    margin: 0;
 }
+
+#hology_link { 
+    max-width: 90%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    min-height: 10%;
+
+}
+
 .project {
     margin-bottom: 3vh;
-    width: 80vw;
-    height: 60vh; 
+    max-width: 70vw;
+    min-height: 40vh;
+    max-height: 45vh; 
     background-color: #fff;
     display: flex;
+    justify-content: space-between;
+    gap: 4%;
     flex-direction: row;
     border-radius: 1vw;
 }
@@ -29,78 +46,87 @@
 }
 
 .img_frame { 
-    width: 45%; 
-    height: 100%;
+    max-width: 45%; 
     overflow: hidden;
     border-radius: 1vw;
-
 }
+
 .img_frame > img {
-    width: auto;
     height: 100%;
     border-radius: 1vw;
-
+    width: 100%;
 }
 
 .project_info { 
-    width: 55%;
     display: flex;
     flex-direction: column;
-    max-height: 100%;
-    gap: 1.25%;
-    overflow: hidden;
+    min-height: 100%;
+    max-width: 50%;
 }
 
 .project_info > * { 
-    width: 90%;
-    padding-left: 10%;
+    flex: 1 1 80%; /* Grow, shrink, base width */
+    max-width: 80%;
 }
 
+
+.project_info > h3 { 
+    margin: 0;
+}
+.project_des{ 
+    overflow: hidden;
+    text-overflow:clip;
+    min-height: 35%;
+    max-height: 40%;
+
+}
+
+
 .tags { 
-    margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 1%;
     flex-wrap: wrap;
+    max-width: 80%;
 }
 
 .tags > * { 
-    width: 45%;
-    margin-bottom: 1%;
-    font-size: 1.25rem;
+    max-width: 45%;
+    margin-top: 1%;
+    font-size: 1rem;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     border-radius: 30vh;
-    padding-bottom: 1%;
     font-weight: 500;
+    line-height: 1;
 
 }
 
 #UI { 
-    border: #3CC58C 4px solid ;    
+    border: #3CC58C 2px solid ;    
 }
 
 #UX { 
-    border: #386F98 4px solid ;    
+    border: #386F98 2px solid ;    
 }
 
 #UR { 
-    border: #E9641C 4px solid ;    
+    border: #E9641C 2px solid ;    
 }
 
 .project_date {
-    margin-top: 5%;
+    align-self: flex-end;
+    position: relative;
+    top: 5%;
+    right: 3%;
 }
 
 #arrow { 
-    display: flex;
-    justify-content: end;
-    align-items: start;
+    position: relative;
+    left: 5%;
     height: auto;
-    width: 100%;
     font-size: 2.5rem;
-    padding-right: 5%;
-    padding-bottom: 2.5%;
 }
+

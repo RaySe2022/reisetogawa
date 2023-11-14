@@ -1,7 +1,7 @@
 .landing {  
-    width:100vw;
-    height: 90vh;
-    min-height: 700px;
+    width: 100dvw;
+    min-height: 600px;
+    max-height: 70vh;
     min-width: 1400px;
   }
   
@@ -13,14 +13,14 @@
   
   .landing_right { 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 90%;
-    height: 90%;
+    height: 100%;
   }
 
   .landing_right img { 
-    min-width: 350px;
-    min-height: 600px;
+    min-height: fit-content;
+    margin-left: 3.5%;
   }
 
   .landing_left { 

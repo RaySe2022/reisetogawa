@@ -10,8 +10,9 @@
 let i = 0;
 let textIndex = 0;
 const texts = [
-    "Hi, I`m", 
-    "REI SETOGAWA",
+    "Hi, I'm", 
+    "REI",
+    "SETOGAWA",
     "UX DESIGNER",
     "I am a passionate UX designer who finds joy in crafting remarkable digital experiences through the lens of product design. I immerse myself in the art of empathizing with people to create solutions that resonate at both a functional and emotional level."
 ];
@@ -37,5 +38,5 @@ function typeWriter() {
 
 function showButton(){
     const landing_btn = document.getElementById("see_btn_landing");
-    landing_btn.style.display="block";
+    landing_btn.style.display="flex";
 }

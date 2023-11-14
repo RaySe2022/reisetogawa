@@ -6,15 +6,16 @@ header {
 }
 
 nav {
-    width: 74vw;
+    width: 70dvw;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 
 .logo {
     width: 7.5vw;
-    min-width: 30px;
+    min-width: 120px;
     transition: all 0.5s ease; /* This will apply the transition to all properties. Adjust the duration (0.3s) as needed */
 
 }
@@ -30,7 +31,7 @@ nav {
 
 .nav-links li a {
     display: inline-block;
-    font-size: 1.15rem;
+    font-size: 1.15vw;
     text-decoration: none;
     color: #292929;
     transition: all 0.5s ease; /* This will apply the transition to all properties. Adjust the duration (0.3s) as needed */

@@ -1,7 +1,7 @@
 .landing {  
     display: grid;
     grid-template-columns: 0.7fr 2fr 0.2fr 2.4fr; 
-    grid-template-rows: 0.8fr 0.7fr 1.5fr 0.0fr; 
+    grid-template-rows: 0fr 0.7fr 1.5fr 0.0fr; 
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -12,13 +12,21 @@
   
   .landing_left { 
     grid-area: landing_left;
-    margin-top: 30%;
+    margin-top: 10%;
+   }
+
+   .landing_left_textbox { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
    }
   
   .landing_right { 
     grid-area: landing_right;
-    margin-top: 11.5%;
 }
+
   #landing_1 { 
     font-weight:600; 
     color: #6e6f6c;
@@ -41,8 +49,18 @@
   }
 
   #landing_4 { 
-    margin-top: 3.5%;
-    width:90%;
+    font-weight:600; 
+    color: #333333;
+    font-size: 4.7rem;
+    line-height: 1;
   }
+
+  #landing_5 { 
+    margin-left: 2%;
+    margin-top: 3.5%;
+    margin-bottom: 10%;
+    width:95%;
+}
+
 
 

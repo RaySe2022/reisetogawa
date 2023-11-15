@@ -53,6 +53,7 @@ function displayAllContent() {
 }
 
 //--------------------------------------------------------------------------------------
+// KANBAN BOARD ANIMATION 
 document.addEventListener("DOMContentLoaded", function() {
     // Select all project sections
     const projectSections = document.querySelectorAll('.project');
@@ -65,6 +66,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         section.addEventListener('mouseout', function() {
             resetImageFrame(this);
+        });
+
+        section.addEventListener('click', function () {
+            gotoLink(this);
         });
     });
 });
@@ -99,5 +104,16 @@ function resetImageFrame(section) {
     imgFrame.style.width = '47.5%'; // Adjust this based on your layout
     imgFrame.style.zIndex = '';
 }
+
+function gotoLink(section){
+    console.log("Link Running")
+    const projectName = section.querySelector("h1").textContent;
+    console.log(projectName);
+    var link = "project_" + projectName + ".html"; 
+    console.log(link);
+    window.location.href = link; 
+}
+
+
 
 

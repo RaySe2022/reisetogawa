@@ -50,7 +50,7 @@
 .img_frame { 
     width: 47.5%;
     border-radius: 1vw;
-    transition: width 0.9s ease; /* Adjust the time (0.5s) as needed */
+    transition: all 0.9s ease; /* Adjust the time (0.5s) as needed */
     transition: height 0.9s ease; /* Adjust the time (0.5s) as needed */
     overflow:hidden
 

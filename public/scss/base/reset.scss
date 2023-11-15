@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html { 
+  min-width: 1280px;
+  max-height: 800px;
+}
+
 /* Remove default padding */
 ul[class],
 ol[class] {

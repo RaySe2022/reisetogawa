@@ -1,87 +1,45 @@
-footer { 
-    width: 100vw;
-    height: 25vh;
-    background-color: #EDE1D1;
-    margin-top: 10vh;
-    padding-top: 5vh;
+footer {
+    background-color: #2D2C2C;
     display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-between;
-}
-
-.footer_left { 
-    margin-left: 10%;
-    width: 12.5%;
+    justify-content: center;
 }
 
 .footer_box { 
-    width: 40%;
+    max-width: 90dvw;
+    min-height: 20vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    margin-right: 10%;
-}
-.footer_title { 
-    color: #404040;
-    width: 100%;
-    line-break: anywhere;
-    max-width: 100%;
-    max-height: 100%;
-    line-height: 1;
-    font-weight: 600;
-    text-overflow: clip;
-    overflow: hidden;
-    font-size: 90%;
-}
-
-.footer_middle { 
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-around;
-    height: 70%;
-    width: 20%;
-    margin-right: 5%;
-}
-
-.footer_middle ul { 
-   padding: 0;
-   padding-left: 2.5%;
-   margin: 0;
-   line-height: 1;
-}
-
-.footer_right { 
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
     justify-content: start;
-    max-height: 70%;
-    height: 70%;
-    width: 25%;
-    margin-left: 5%;
 }
 
-.contact_box { 
+.footer_box > * { 
+    align-items: start;
+    max-height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: end;
+    justify-content: start;
+    flex-direction: column;
+    margin: 2.5% 2.5% 0% 2.5%;
+    width: 8%;
 }
 
-.footer_right img { 
-    width: 15%;
-    height: auto;
-    margin-top: 5%;
-    padding-left: 1.5%;
+.footer_one {
+    width: 20%;
 }
 
-.footer_right ul { 
-    padding: 0;
-    padding-left: 1.5%;
+.footer_one > h3{
+    color: #fff;
+    font-size: 1.45rem;
     margin: 0;
-    line-height: 1;
- }
+}
+
+.footer_col { 
+    margin-top: 5%;
+}
+.footer_col > h4{ 
+    color: #fff;
+}
+.footer_one > img { 
+    max-width: 80%;
+    width: 70%;
+}

@@ -77,41 +77,45 @@ document.addEventListener("DOMContentLoaded", function() {
 function expandImageFrame(section) {
     const imgFrame = section.querySelector('.img_frame');
     const img = section.querySelector('.project_img');
+    const link = section.querySelector('.project_link'); 
 
     // Expand .img_frame to cover the whole section
     imgFrame.style.position = 'absolute';
     imgFrame.style.top = '0';
     imgFrame.style.left = '0';
     imgFrame.style.width = '100%';
-    imgFrame.style.height = '100%';
     imgFrame.style.zIndex = '10';
-    img.style.maxHeight = '50vh'; 
     img.style.width = '100%'; 
-    img.style.height = '100%'; 
-
+    img.style.filter = 'blur(8px)'; // The value 8px can be adjusted to increase or decrease the blur intensity
+    link.style.display = 'flex';
+    link.style.position = 'absolute'; // Position it absolutely within the section
+    link.style.top = '50%'; // Align vertically to the middle
+    link.style.left = '50%'; // Align horizontally to the middle
+    link.style.transform = 'translate(-50%, -50%)'; // Center it perfectly
+    link.style.zIndex = '20';
+    link.style.width = 'auto'; // Adjust width as necessary
 
 }
 
 function resetImageFrame(section) {
     const imgFrame = section.querySelector('.img_frame');
     const img = section.querySelector('.project_img');
+    const link = section.querySelector('.project_link'); 
+
 
     // Reset .img_frame to its original style
     imgFrame.style.position = '';
     imgFrame.style.top = '';
     imgFrame.style.left = '';
-    imgFrame.style.height = '';
-    imgFrame.style.width = '47.5%'; // Adjust this based on your layout
+    imgFrame.style.width = '';
     imgFrame.style.zIndex = '';
-}
+    img.style.width = ''; 
+    img.style.filter = ''; // The value 8px can be adjusted to increase or decrease the blur intensity
+    link.style.display = '';
+    link.style.zIndex = '';
+    link.style.width = '';
 
-function gotoLink(section){
-    console.log("Link Running")
-    const projectName = section.querySelector("h1").textContent;
-    console.log(projectName);
-    var link = "project_" + projectName + ".html"; 
-    console.log(link);
-    window.location.href = link; 
+
 }
 
 

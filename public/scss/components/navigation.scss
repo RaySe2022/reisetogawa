@@ -19,11 +19,17 @@ nav {
 .logo {
     width: 7.5vw;
     min-width: 120px;
-    transition: all 0.5s ease; /* This will apply the transition to all properties. Adjust the duration (0.3s) as needed */
+    transition: all 1s ease; /* This will apply the transition to all properties. Adjust the duration (0.3s) as needed */
+}
+
+.logo > img {
+    transition: all 1s ease; 
 
 }
 
 .nav-links {
+    min-width: 280px;
+
     width: 28.5%;
     list-style: none;
     display: flex;
@@ -44,6 +50,7 @@ nav {
 .nav-links li a:hover {
     color: #404040; /* This will enlarge the logo by 10% when hovered */
     transform: scale(1.2);
+    text-decoration: underline solid 2px;
 }
 
 

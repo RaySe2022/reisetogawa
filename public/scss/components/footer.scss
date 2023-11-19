@@ -2,10 +2,11 @@ footer {
     background-color: #2D2C2C;
     display: flex;
     justify-content: center;
+    min-width: 1280px;
 }
 
 .footer_box { 
-    max-width: 90dvw;
+    min-width: 100%;
     min-height: 20vh;
     height: 30vh;
     display: flex;
@@ -22,6 +23,7 @@ footer {
     margin: 2.5% 2.5% 0% 2.5%;
     width: 8%;
 }
+
 
 .footer_one {
     width: 20%;

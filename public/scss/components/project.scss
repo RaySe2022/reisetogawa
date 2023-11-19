@@ -183,16 +183,21 @@ body {
 }
   
   .process_left {
-    margin-left: 30%;
     grid-area: process_left;
     flex-direction: column;
-    justify-content: left;
+     display: flex;
+     align-items: end;
+     justify-content: space-around;
+     max-height: 75vh;
 }
 
   .process_left > .iteration { 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     text-align: start;
-    max-width: 65%;
-    min-width: 50%;
+    max-width: 45%;
+    max-height: 75vh;
   }
   
   .process_right {
@@ -219,11 +224,15 @@ body {
   
   .process_middle { 
     grid-area: process_middle;
+    display: flex;
     min-width: 100%;
    }
 
    .process_middle > img{ 
+    justify-content: center;
+    align-items: center;
     min-width: 100%;
+    margin: auto;
    }
    .project_iteration {
     min-height: 60vh;
@@ -317,6 +326,7 @@ body {
         text-align: justify;
         padding: 5%;
     }
+
 
     #conclusion  > h3 { 
         text-align: center;
@@ -439,10 +449,15 @@ h4 {
 }
 
 .img_box { 
-    margin: 1.5% 0 ; 
     position: relative;
     max-width: 100%;
     background-color: #ffffff;
+}
+
+.img_box > img {
+    margin:  0 auto ; 
+    width: auto;
+    max-height: 450px;
 }
 
  #i4_develop> .img_box {

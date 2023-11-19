@@ -1,19 +1,28 @@
 .side_nav {
     position: fixed;
     left: 5vw;
-    top: 5em;
+    top: 15vh;
     padding: 1em;
     width: 15vw;
+    min-width: fit-content;
     line-height: 2;
     
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      width: fit-content;
+
     }
     
     ul ul {
       padding-left: 2em;
+      width: fit-content;
+
+    }
+
+    li {
+      width: fit-content;
     }
     
     li a {
@@ -22,9 +31,16 @@
       text-decoration: none;
       transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
     }
+
+    li a:hover  {
+      display: inline-block;
+      color: #333333;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    }
     
     li.visible>a {
-      color: #111;
+      color: #333333;
       transform: translate( 5px );
     }
   }
@@ -33,12 +49,37 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: fit-content;
     height: 100%;
     z-index: -1;
     
     path {
       transition: all 0.3s ease;
     }
+    .section-link {
+      display: none;
+    }
+  
+    .section-link.visible {
+      display: block;
+      color: "";
+    }
+  
+    .section-link > a.active {
+      color: #333333; /* Or any darker color you prefer */
+      background-color: none;
+  }
+
   }
   
+  .section-link {
+    display: none;
+  }
+
+  .section-link.visible {
+    display: block;
+    color: "";
+  }
+  .side_nav a.side_nav_active {
+    color: #333333; /* Or any other color you prefer */
+}

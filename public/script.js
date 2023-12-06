@@ -84,9 +84,10 @@ function expandImageFrame(section) {
     imgFrame.style.top = '0';
     imgFrame.style.left = '0';
     imgFrame.style.width = '100%';
+    imgFrame.style.height = '100%';
     imgFrame.style.zIndex = '10';
     img.style.width = '100%'; 
-    img.style.filter = 'blur(8px)'; // The value 8px can be adjusted to increase or decrease the blur intensity
+    img.style.filter = 'blur(5px)'; // The value 8px can be adjusted to increase or decrease the blur intensity
     link.style.display = 'flex';
     link.style.position = 'absolute'; // Position it absolutely within the section
     link.style.top = '50%'; // Align vertically to the middle
@@ -108,6 +109,7 @@ function resetImageFrame(section) {
     imgFrame.style.top = '';
     imgFrame.style.left = '';
     imgFrame.style.width = '';
+    imgFrame.style.height = '';
     imgFrame.style.zIndex = '';
     img.style.width = ''; 
     img.style.filter = ''; // The value 8px can be adjusted to increase or decrease the blur intensity

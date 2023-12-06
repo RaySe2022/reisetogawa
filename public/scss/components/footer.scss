@@ -37,9 +37,22 @@ footer {
 
 .footer_col { 
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_col > a { 
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_col > a:hover { 
+    text-decoration: underline;
+    color: #fff;
 }
 .footer_col > h4{ 
     color: #fff;
+    text-decoration: underline;
 }
 .footer_one > img { 
     max-width: 80%;

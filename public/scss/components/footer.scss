@@ -41,6 +41,7 @@ footer {
 
 .footer_col { 
     margin-top: 5%;
+    width: 55%;
     display: flex;
     flex-direction: column;
 }
@@ -57,6 +58,7 @@ footer {
 .footer_col > h4{ 
     color: #fff;
     text-decoration: underline;
+    width: fit-content;
 }
 .footer_one > img { 
     max-width: 80%;
@@ -73,5 +75,5 @@ footer {
     flex-basis: 1;
 }
 .logo_box > a > img{
-    max-height: 75%;
+    max-height: 80%;
 }

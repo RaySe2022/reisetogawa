@@ -26,8 +26,9 @@ footer {
 }
 
 
-.footer_one > img{ 
+.footer_one > a >img{ 
     margin: 10% auto;
+    width: 80%;
 }
 
 
@@ -39,7 +40,8 @@ footer {
 
 .footer_col > a { 
     text-decoration: none;
-    color: #fff;
+    color: #6E6F6C;
+    font-weight: 500;
 }
 
 .footer_col > a:hover { 

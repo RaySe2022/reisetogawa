@@ -5,8 +5,8 @@ let slideIndices = {
     'slideshow-3': 1,
     'slideshow-4': 1,
     'slideshow-6': 1,
-    'slideshow-7': 1
-
+    'slideshow-7': 1,
+    'slideshow-8': 1,
 
   };
   
@@ -50,6 +50,8 @@ let slideIndices = {
   showSlides('slideshow-4', slideIndices['slideshow-4']);
   showSlides('slideshow-6', slideIndices['slideshow-6']);
   showSlides('slideshow-7', slideIndices['slideshow-7']);
+  showSlides('slideshow-8', slideIndices['slideshow-8']);
+
 
 
 

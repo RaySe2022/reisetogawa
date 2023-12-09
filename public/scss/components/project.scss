@@ -264,55 +264,6 @@ body {
     align-items: stretch;
    }
 
-
-   .method > h5 {
-    margin: 0;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    line-height: 1;
-    font-weight: 400;
-   }
-
-   .method > p {
-    margin: 0;
-    font-size: 0.8rem;
-    line-height: 1;
-    line-break:loose;
-    margin-bottom: 3%;
-    color: #797777;
-   }
-
-   .method > img { 
-    border-radius: 0.5vw;
-    max-height: 60%;
-    width: 100%;
-   }
-
-   .method { 
-    flex: 1;    
-    flex-basis: 25%;
-    height: 30%;
-   }
-
-   #see_method { 
-    display: flex;
-    flex-direction: row;
-    font-size: 0.8rem;
-   }
-
-   #see_method > p {
-    color: #F17256;
-   }
-
-   .material-symbols-outlined { 
-    margin-left: 3%;
-    margin-bottom: 2%;
-    color: #F17256;
-   }
-   .methods_gallery > :nth-child(4) {
-    flex-grow: 1;
-    }
-
     .iteration_develop > .callout { 
     padding: 2% 2%;
     }

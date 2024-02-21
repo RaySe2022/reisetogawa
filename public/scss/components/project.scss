@@ -411,13 +411,32 @@ h4 {
     max-height: 450px;
 }
 
+#i1_deliver > .img_box { 
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+#i1_deliver > .img_box > img{ 
+    max-width: 50%;
+}
+
  #i4_develop> .img_box {
     display: flex;
     flex-direction: row;
     max-width: 100%;
     justify-content: stretch;
-
 }
+
+#i3_define> .img_box {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+
+
 
  #i4_develop > .img_box > img{
     max-width: 50%;

@@ -11,6 +11,8 @@ let slideIndices = {
     'slideshow-10': 1,
     'slideshow-11': 1,
     'slideshow-12': 1,
+    'slideshow-13': 1,
+
 
 
 

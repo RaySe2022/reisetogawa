@@ -411,15 +411,22 @@ h4 {
     max-height: 450px;
 }
 
-#i1_deliver > .img_box { 
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 100%;
-    justify-content: space-around;
-}
+
 
 #i1_deliver > .img_box > img{ 
+    max-width: 100%;
+}
+
+.img_box_double > img {
     max-width: 50%;
+}
+
+.img_box_double {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    max-height: 400px;
 }
 
  #i4_develop> .img_box {
@@ -464,6 +471,13 @@ h4 {
     max-width: 100%;
     justify-content: stretch;
 
+}
+
+
+#i3_deliver_sol > .img_box > img{
+    max-width: 100%;
+    padding:0;
+    padding-bottom: 10px;
 }
 
  #i3_deliver > .img_box > img{

@@ -12,11 +12,7 @@ let slideIndices = {
     'slideshow-11': 1,
     'slideshow-12': 1,
     'slideshow-13': 1,
-
-
-
-
-
+    'slideshow-14': 1,
   };
   
   function changeSlide(slideshowId, n) {

@@ -2,7 +2,8 @@
     position: fixed;
     right:0;
     top: 40vh;
-    display: flex;
+    //display: flex;
+    display:none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -12,7 +13,8 @@
 }
 
 .side-nav  span {
-    display: block;
+    // display: block;
+    display: none;
     width: 25px;
     height: 25px;
     text-align: center;

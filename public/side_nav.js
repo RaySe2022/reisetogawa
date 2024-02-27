@@ -26,6 +26,7 @@ drawPath();
 checkProcessVisibility(); // Initial call to set up the visibility
 
 function checkProcessVisibility() {
+    console.log("checkProcess Running")
     var processSection = document.getElementById('process');
 
     if (!processSection) {
@@ -44,6 +45,7 @@ function checkProcessVisibility() {
 }
 
 function drawPath() {
+    console.log("Draw Path Running")
     // Select all the <a> tags directly preceding the .section-link
     tocItems = [].slice.call(toc.querySelectorAll('a + .section-link'));
 
@@ -92,66 +94,72 @@ function drawPath() {
 }
 
 function sync() {
-  var windowHeight = window.innerHeight;
+    console.log("Running Sync");
+    var windowHeight = window.innerHeight;
 
-  document.querySelectorAll('.side_nav a').forEach(function(anchor) {
-    anchor.classList.remove('side_nav_active');
-});
+    // Remove 'side_nav_active' class from all anchor elements
+    document.querySelectorAll('.side_nav a').forEach(function(anchor) {
+        anchor.classList.remove('side_nav_active');
+    });
 
+    // Iterate through tocItems to determine visibility
+    tocItems.forEach(function(item) {
+        var targetBounds = item.target.getBoundingClientRect();
+        console.log("Target Bounds:", targetBounds);
 
-tocItems.forEach(function(item) {
-  var targetBounds = item.target.getBoundingClientRect();
+        // Check if this section is in the viewport
+        if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
+            console.log("Section is in viewport:", item.target);
+            item.anchor.classList.add('side_nav_active'); // Add active class to the main anchor
+            return; // Exit the loop if section is visible
+        }
+    });
 
-  // Check if this section is in the viewport
-  if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
-      item.anchor.classList.add('side_nav_active'); // Add active class
-  return  }
-});
+    var pathStart = pathLength,
+        pathEnd = 0;
+    var visibleItems = 0;
 
-  var pathStart = pathLength,
-      pathEnd = 0;
+    // Iterate through tocItems to determine visible path
+    tocItems.forEach(function(item) {
+        var targetBounds = item.target.getBoundingClientRect();
 
-  var visibleItems = 0;
+        if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
+            pathStart = Math.min(item.pathStart, pathStart);
+            pathEnd = Math.max(item.pathEnd, pathEnd);
+            visibleItems += 1;
 
-  tocItems.forEach(function(item) {
-      var targetBounds = item.target.getBoundingClientRect();
+            item.sectionLink.classList.add('visible');
+            item.anchor.classList.add('side_nav_active'); // Add active class to the main anchor
 
-      if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
-          pathStart = Math.min(item.pathStart, pathStart);
-          pathEnd = Math.max(item.pathEnd, pathEnd);
+            // Add 'active' class to all child anchors
+            var childAnchors = item.sectionLink.querySelectorAll('a');
+            childAnchors.forEach(function(anchor) {
+                anchor.classList.add('side_nav_active');
+            });
+        } else {
+            item.sectionLink.classList.remove('visible');
+            item.anchor.classList.remove('side_nav_active'); // Remove active class from the main anchor
 
-          visibleItems += 1;
+            // Remove 'active' class from all child anchors
+            var childAnchors = item.sectionLink.querySelectorAll('a');
+            childAnchors.forEach(function(anchor) {
+                anchor.classList.remove('side_nav_active');
+            });
+        }
+    });
 
-          item.sectionLink.classList.add('visible');
-          item.anchor.classList.add('side_nav_active'); // Add active class to the main anchor
+    // Specify the visible path or hide the path altogether
+    // if there are no visible items
+    if (visibleItems > 0 && pathStart < pathEnd) {
+        tocPath.setAttribute('stroke-dashoffset', '1');
+        tocPath.setAttribute('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
+        tocPath.setAttribute('opacity', 1);
+    } else {
+        tocPath.setAttribute('opacity', 0);
+    }
 
-          // Add 'active' class to all child anchors
-          var childAnchors = item.sectionLink.querySelectorAll('a');
-          childAnchors.forEach(function(anchor) {
-              anchor.classList.add('side_nav_active');
-          });
-      } else {
-          item.sectionLink.classList.remove('visible');
-          item.anchor.classList.remove('side_nav_active'); // Remove active class from the main anchor
+    lastPathStart = pathStart;
+    lastPathEnd = pathEnd;
 
-          // Remove 'active' class from all child anchors
-          var childAnchors = item.sectionLink.querySelectorAll('a');
-          childAnchors.forEach(function(anchor) {
-              anchor.classList.remove('side_nav_active');
-          });
-      }
-  });
-
-  // Specify the visible path or hide the path altogether
-  // if there are no visible items
-  if (visibleItems > 0 && pathStart < pathEnd) {
-      tocPath.setAttribute('stroke-dashoffset', '1');
-      tocPath.setAttribute('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
-      tocPath.setAttribute('opacity', 1);
-  } else {
-      tocPath.setAttribute('opacity', 0);
-  }
-
-  lastPathStart = pathStart;
-  lastPathEnd = pathEnd;
+    console.log("sync done");
 }

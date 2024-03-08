@@ -10,7 +10,7 @@ const texts = [
     "Hi, I'm", 
     "REI SETOGAWA",
     "UX DESIGNER",
-    "I am a passionate UX designer who finds joy in crafting remarkable digital experiences through the lens of product design. I immerse myself in the art of empathizing with people to create solutions that resonate at both a functional and emotional level."
+    "I am a passionate UX/UI Product Designer who finds joy in crafting remarkable user experiences with web development skills and knowledge. I immerse myself in the art of empathizing with people to create solutions that resonate at both a functional and emotional level."
 ];
 const normalSpeed = 100;
 const fastSpeed = 30;
